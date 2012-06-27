@@ -1,0 +1,15 @@
+{% extends "about/tutor_base.html" %}
+{% block tutor_header %}Наполнение проекта{% endblock tutor_header %}
+{% block tutor_content %}
+    <p>    
+	Перейдем по вкладке New Object. Как уже говорилось ранее, мы будем рассматривать проект на примере базы стран. Процесс довольно прост: вводите имя объекта, его описание и жмем кнопку Save Object. Если Вы вернетесь на страницу Knowledge Base, то увидите, что  Ваш объект находится в списке Objects. Повторяйте процесс пока все объекты, которые Вы хотите исследовать, не окажутся в этом списке.
+Принцип добавления новых признаков абсолютно аналогичен.
+
+        <img src="{{ STATIC_URL }}samples/new_object.jpg" align = "middle" name="Main Page" vspace="10">
+        <TABLE width="100%">
+        <TD width="33%">Вернуться <a href="{% url tutor_knowledge_base %}" > назад </a></TD>
+        <TD ALIGN="center" width="33%"><a href="{% url tutor_contents %}" > Оглавление </a></TD>
+        <TD align="right"><a href="{% url tutor_link_objects %}" > Следующая страница </a></TD>
+        </TABLE>
+    </p>
+{% endblock tutor_content %}

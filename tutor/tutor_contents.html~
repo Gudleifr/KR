@@ -1,0 +1,20 @@
+{% extends "about/tutor_base.html" %}
+{% block tutor_header %}Содержание{% endblock tutor_header %}
+{% block tutor_content %}
+    <p>    
+	<dl>
+	<dt>Создание нового проекта</dt>
+	<dt>Главная страница проекта</dt>
+	<dt>База знаний</dt>
+	<dt>Наполнение базы</dt>
+	<dt>Ассоциирование признаков</dt>
+	<dt>Решетка понятий</dt>
+	<dt>Exploration</dt>
+	</dl>
+Попробуем добавить новые объекты, которые у нас имеются. 
+        <img src="{{ STATIC_URL }}samples/knowledge_base.jpg" align = "middle" name="Main Page" vspace="10">
+        <TABLE width="100%">
+        <TD> <a href="{% url tutor_filling_base %}" > Следующая страница </a></TD><TD ALIGN="right">Вернуться <a href="{% url tutor_main_page %}" > назад </a></TD>
+        </TABLE>
+    </p>
+{% endblock tutor_content %}
